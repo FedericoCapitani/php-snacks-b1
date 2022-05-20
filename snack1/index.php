@@ -24,7 +24,7 @@ $partite = [
 ];
 
 var_dump($partite);
-var_dump($partite[1][PrimaSquadra]);
+var_dump($partite[0][$PrimaSquadra]);
 ?>
 
 <!DOCTYPE html>
@@ -40,10 +40,10 @@ var_dump($partite[1][PrimaSquadra]);
     <p>
         <?php
         for ($i = 0; $i < 3; $i++){
-            echo $partite[$i][PrimaSquadra];
-            echo $partite[$i][SecondaSquadra];
-            echo $partite[$i][punteggioPrima];
-            echo $partite[$i][punteggioSeconda];
+            echo $partite[$i][$PrimaSquadra];
+            echo $partite[$i][$SecondaSquadra];
+            echo $partite[$i][$punteggioPrima];
+            echo $partite[$i][$punteggioSeconda];
         }
         ?>
     </p>
