@@ -6,21 +6,25 @@ $partite = [
     [
         "PrimaSquadra" => "Olimpia Milano",
         "SecondaSquadra" => "Cantù",
-        "punteggio" => rand(1, 100).'-'.rand(1, 100),
+        "punteggioPrima" => rand(1, 100),
+        "punteggioSeconda" => rand(1, 100),
     ],
     [
         "PrimaSquadra" => "Torino",
         "SecondaSquadra" => "Bari",
-        "punteggio" => rand(1, 100).'-'.rand(1, 100),
+        "punteggioPrima" => rand(1, 100),
+        "punteggioSeconda" => rand(1, 100),
     ],
     [
         "PrimaSquadra" => "Roma",
         "SecondaSquadra" => "Varese",
-        "punteggio" => rand(1, 100).'-'.rand(1, 100),
+        "punteggioPrima" => rand(1, 100),
+        "punteggioSeconda" => rand(1, 100),
     ],
 ];
 
-var_dump($partite)
+var_dump($partite);
+var_dump($partite[1][PrimaSquadra]);
 ?>
 
 <!DOCTYPE html>
@@ -37,6 +41,9 @@ var_dump($partite)
         <?php
         for ($i = 0; $i < 3; $i++){
             echo $partite[$i][PrimaSquadra];
+            echo $partite[$i][SecondaSquadra];
+            echo $partite[$i][punteggioPrima];
+            echo $partite[$i][punteggioSeconda];
         }
         ?>
     </p>
