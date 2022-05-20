@@ -5,32 +5,32 @@ $classe = [
     [
         "nome" => "Marco",
         "cognome" => "Rossi",
-        "voti" => [6, 7, 8, 7 ,8 ,7 ,9, 6],
+        "voti" => [6, 7, 8, 7, 8, 7, 9, 6],
     ],
     [
         "nome" => "Paola",
         "cognome" => "Ricci",
-        "voti" => [6, 7, 8, 7 ,8 ,7 ,9, 6],
+        "voti" => [6, 8, 8, 9, 9, 9, 7, 7],
     ],
     [
         "nome" => "Andrea",
         "cognome" => "Verdi",
-        "voti" => [6, 7, 8, 7 ,8 ,7 ,9, 6],
+        "voti" => [6, 6, 8, 6, 8, 7, 6, 6],
     ],
     [
         "nome" => "Luigi",
         "cognome" => "Monti",
-        "voti" => [6, 7, 8, 7 ,8 ,7 ,9, 6],
+        "voti" => [8, 8, 8, 9, 9, 7, 7, 8],
     ],
     [
         "nome" => "Sara",
         "cognome" => "Franchi",
-        "voti" => [6, 7, 8, 7 ,8 ,7 ,9, 6],
+        "voti" => [7, 7, 7, 7, 8, 8, 9, 7],
     ],
     [
         "nome" => "Luca",
         "cognome" => "Abete",
-        "voti" => [6, 7, 8, 7 ,8 ,7 ,9, 6],
+        "voti" => [6, 5, 5, 7, 6, 7, 6, 5],
     ]
 ];
 
@@ -41,7 +41,7 @@ for($i = 0; $i < count($classe); $i++){
         $sum = $sum + $classe[$i]["voti"][$j];
     }
     $media = $sum / count($classe[$i]["voti"]);
-    $classe["media_voti"] = $media;
+    $classe[$i]["media_voti"] = $media;
 }
 // var_dump($classe);
 ?>
