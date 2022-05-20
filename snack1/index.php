@@ -6,20 +6,20 @@ $partite = [
     [
         "PrimaSquadra" => "Olimpia Milano",
         "SecondaSquadra" => "Cantù",
-        "punteggioPrima" => rand(1, 100),
-        "punteggioSeconda" => rand(1, 100),
+        "punteggioPrima" => rand(40, 100),
+        "punteggioSeconda" => rand(40, 100),
     ],
     [
         "PrimaSquadra" => "Torino",
         "SecondaSquadra" => "Bari",
-        "punteggioPrima" => rand(1, 100),
-        "punteggioSeconda" => rand(1, 100),
+        "punteggioPrima" => rand(40, 100),
+        "punteggioSeconda" => rand(40, 100),
     ],
     [
         "PrimaSquadra" => "Roma",
         "SecondaSquadra" => "Varese",
-        "punteggioPrima" => rand(1, 100),
-        "punteggioSeconda" => rand(1, 100),
+        "punteggioPrima" => rand(40, 100),
+        "punteggioSeconda" => rand(40, 100),
     ],
 ];
 
