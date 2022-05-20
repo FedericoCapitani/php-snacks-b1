@@ -34,7 +34,7 @@ $classe = [
     ]
 ];
 
-var_dump(count($classe[0]["voti"]));
+var_dump(count($classe));
 for($i = 0; $i < count($classe); $i++){
     $sum = 0;
     for($j = 0; $j < count($classe[$i]["voti"]); $j++){
