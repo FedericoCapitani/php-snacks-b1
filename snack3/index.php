@@ -50,14 +50,34 @@ $posts = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>snack3</title>
+
+    <style>
+        .container{
+            display: flex;
+            column-gap: 1rem;
+            flex-wrap: wrap;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .card{
+            width: calc(100% / 3 - 1rem);
+            border: 1px solid blue;
+        }
+    </style>
 </head>
 <body>
     <h1>Posts</h1>
 
-    <div>
+    
+    <div class="container">
         <?php
             foreach($posts as $key => $value){
+                ?>
+                <div class="card">
+                <?php
                 echo $key;
+                ?>
+                    <?php
                 foreach($value as $article){
                     ?>
                     <p>
@@ -73,6 +93,9 @@ $posts = [
                     </p>
                     <?php
                 }
+                ?>
+                </div>
+                <?php
             }
         ?>
     </div>
