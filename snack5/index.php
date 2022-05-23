@@ -20,7 +20,9 @@ $strings = explode('.', $text);
 
     <?php
     foreach($strings as $string){
+        
         ?>
+        <h2>paragrafo</h2>
         <p>
             <?php echo $string;?>
         </p>
