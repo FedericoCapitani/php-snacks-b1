@@ -23,7 +23,6 @@
     ]
 ];
 
-var_dump($db["teachers"]["name"]);
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +43,7 @@ var_dump($db["teachers"]["name"]);
 </head>
 <body>
     
-    <?php 
+    <!-- <?php 
         foreach($db as $key => $value ){
         ?>
         <div class="teachers">
@@ -62,6 +61,8 @@ var_dump($db["teachers"]["name"]);
 
         <?php
     } 
-    ?>
+    ?> -->
+    
+
 </body>
 </html>
