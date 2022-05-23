@@ -44,16 +44,24 @@ var_dump($db["teachers"]["name"]);
 </head>
 <body>
     
-    <?php foreach($db as $key => $value ){
+    <?php 
+        foreach($db as $key => $value ){
         ?>
         <div class="teachers">
-            <div class="card">
-                <p>Nome: <?php echo $value; ?> </p>
-                <p>Cognome: <?php echo $value["lastname"]; ?> </p>
-            </div>
+            <?php
+            foreach($value as $teacher){
+                ?>
+                <div class="card">
+                <p>Nome: <?php echo $teacher["name"]; ?> </p>
+                <p>Cognome: <?php echo $teacher["lastname"]; ?> </p>
+                </div>
+                <?php
+            }
+            ?>
         </div>
-        <?php
 
-    } ?>
+        <?php
+    } 
+    ?>
 </body>
 </html>
