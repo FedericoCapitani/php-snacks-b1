@@ -56,9 +56,11 @@ for($i = 0; $i < count($classe); $i++){
 </head>
 <body>
     <div>
-        <span>Nome: </span>
         <?php
         for($i = 0; $i < count($classe); $i++){
+            ?>
+            <span>Nome: </span>
+            <?php
             echo $classe[$i]["nome"];
             ?>
         <span> Cognome: </span>
